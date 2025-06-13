@@ -1,6 +1,6 @@
 # MPU6050 Raw I2C Interface (No Libraries)
 
-This project provides a clean, low-level interface to the MPU6050 sensor (accelerometer + gyroscope) using raw I2C communication. It performs data acquisition, calibration, and sensor fusion without relying on high-level libraries like Adafruit or RTIMULib.
+This project provides a clean, low-level interface to the MPU6050 sensor (accelerometer + gyroscope) using raw I2C communication. It performs data acquisition, calibration, and sensor fusion.
 
 ## Features
 
@@ -26,3 +26,5 @@ This project provides a clean, low-level interface to the MPU6050 sensor (accele
    ```cpp
    mpu_init();           // Initialize sensor
    IMU_calibration();    // Calibrate accelerometer and gyroscope
+   get_angle();          // Call it in your loop, it Updates global pitch/roll values (angle_x, angle_y)
+
