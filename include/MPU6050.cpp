@@ -125,5 +125,5 @@ void get_angle()
 
   angle_x = 0.98 * (angle_x + Gyro_X_angle) + 0.02 * Accel_X_angle; // roll
   angle_y = 0.98 * (angle_y + Gyro_Y_angle) + 0.02 * Accel_Y_angle; // pitch
-  angle_z = Gyro_Z_angle;
+  angle_z += Gyro_Z_angle * elapsed_time;
 }
