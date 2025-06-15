@@ -23,8 +23,8 @@ float Gyro_X_error = 0, Gyro_Y_error = 0, Gyro_Z_error = 0;
 
 
 float AccelX = 0, AccelY = 0, AccelZ = 0;
-float Accel_X_angle = 0, Accel_Y_angle = 0; Accel_Z_angle = 0;
-float Accel_X_error = 0, Accel_Y_error = 0; Accel_Z_error = 0;
+float Accel_X_angle = 0, Accel_Y_angle = 0, Accel_Z_angle = 0;
+float Accel_X_error = 0, Accel_Y_error = 0, Accel_Z_error = 0;
 
 float angle_x = 0, angle_y = 0, angle_z = 0;
 float t = 0, prev = 0;
@@ -36,4 +36,3 @@ void Acc_data();
 void Gyro_data();
 void get_angle();
 
-#endif
