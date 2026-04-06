@@ -1,5 +1,31 @@
-.pio
+# --- PlatformIO ---
+# Ignore the entire build and library dependency folder
+.pio/
+# Also ignore local library dependencies if managed by PIO
+libdeps/
+
+# --- VS Code ---
+# Ignore the IntelliSense database and precompiled headers
 .vscode/.browse.c_cpp.db*
+.vscode/ipch/
+# Ignore machine-specific configurations
 .vscode/c_cpp_properties.json
 .vscode/launch.json
-.vscode/ipch
+.vscode/settings.json
+.vscode/tasks.json
+
+# --- Compiler & Build Artifacts ---
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
+
+# --- Environment Specific ---
+# If you create a private config for ports or passwords
+*.local
