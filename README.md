@@ -23,8 +23,7 @@ This project implements raw **I²C register access** to provide filtered spatial
 - Uses `micros()` for discrete-time integration to minimize cumulative error.
 
 ### Non-Blocking Telemetry
-- Optimized main loop designed for **real-time flight control or robotics**  
-  *(f > 200 Hz execution rate).*
+- Optimized main loop designed for **real-time flight control or robotics** *(f > 200 Hz execution rate).*
 
 ---
 
@@ -55,9 +54,7 @@ The driver estimates orientation by fusing data from two different sensors to co
 
 The estimated angle is calculated as:
 
-\[
-\theta_n = \alpha (\theta_{n-1} + \omega \cdot \Delta t) + (1 - \alpha) a
-\]
+$$\theta_n = \alpha (\theta_{n-1} + \omega \cdot \Delta t) + (1 - \alpha) a$$
 
 Where:
 
@@ -106,5 +103,4 @@ cd MPU6050-Core
 
 3. Upload the firmware to your microcontroller.
 
-**Important:**  
-Keep the sensor **perfectly still and level during the first ~3 seconds after boot** so the automatic calibration routine can correctly compute the bias offsets.
+**Important:** Keep the sensor **perfectly still and level during the first ~3 seconds after boot** so the automatic calibration routine can correctly compute the bias offsets.
